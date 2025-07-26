@@ -21,6 +21,8 @@ const Navigation = () => {
     { name: 'Cocktail Builder', path: '/cocktail-builder' },
     { name: 'Ingredients', path: '/ingredients' },
     { name: 'Virtual Classes', path: '/virtual-classes' },
+    { name: 'Private Events', path: '/private-events' },
+    { name: 'Find Us', path: '/find-us' },
     { name: 'Subscription', path: '/subscription' }
   ]
 
@@ -46,7 +48,7 @@ const Navigation = () => {
               <Leaf className="w-6 h-6 text-white" />
             </motion.div>
             <span className="text-2xl font-display font-bold gradient-text">
-              Coco Tails
+              SOBRE
             </span>
           </Link>
 

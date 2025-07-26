@@ -53,7 +53,7 @@ const FeaturesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-wellness-charcoal mb-6">
-            Why Choose <span className="gradient-text">Coco Tails</span>
+            Why Choose <span className="gradient-text">SOBRE</span>
           </h2>
           <p className="text-xl text-wellness-sage max-w-3xl mx-auto">
             We're revolutionizing the cocktail industry by combining premium taste with wellness benefits, 

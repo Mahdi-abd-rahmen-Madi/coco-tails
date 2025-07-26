@@ -46,6 +46,8 @@ def create_app(config_name='default'):
     from app.routes.subscriptions import subscriptions_ns
     from app.routes.classes import classes_ns
     from app.routes.users import users_ns
+    from app.routes.private_events import private_events_bp
+    from app.routes.location import location_bp
     
     api.add_namespace(auth_ns, path='/auth')
     api.add_namespace(cocktails_ns, path='/cocktails')
@@ -54,7 +56,11 @@ def create_app(config_name='default'):
     api.add_namespace(classes_ns, path='/classes')
     api.add_namespace(users_ns, path='/users')
     
+    # Register new blueprints
+    app.register_blueprint(private_events_bp)
+    app.register_blueprint(location_bp)
+    
     # Import models to ensure they are registered with SQLAlchemy
-    from app.models import user, cocktail, ingredient, subscription, virtual_class
+    from app.models import user, cocktail, ingredient, subscription, virtual_class, private_event, location
     
     return app

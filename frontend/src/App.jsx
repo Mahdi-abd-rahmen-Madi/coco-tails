@@ -6,6 +6,8 @@ import CocktailBuilder from './pages/CocktailBuilder'
 import IngredientGlossary from './pages/IngredientGlossary'
 import Subscription from './pages/Subscription'
 import VirtualClasses from './pages/VirtualClasses'
+import PrivateEvents from './pages/PrivateEvents'
+import FindUs from './pages/FindUs'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 
@@ -21,6 +23,8 @@ function App() {
             <Route path="/ingredients" element={<IngredientGlossary />} />
             <Route path="/subscription" element={<Subscription />} />
             <Route path="/virtual-classes" element={<VirtualClasses />} />
+            <Route path="/private-events" element={<PrivateEvents />} />
+            <Route path="/find-us" element={<FindUs />} />
           </Routes>
         </main>
         <Footer />

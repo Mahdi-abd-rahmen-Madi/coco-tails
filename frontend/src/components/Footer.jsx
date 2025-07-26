@@ -46,7 +46,7 @@ const Footer = () => {
                 <Leaf className="w-6 h-6 text-white" />
               </motion.div>
               <span className="text-2xl font-display font-bold gradient-text">
-                Coco Tails
+                SOBRE
               </span>
             </Link>
             
@@ -135,7 +135,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-3">
               <Mail className="w-5 h-5 text-primary-400" />
-              <span className="text-gray-300">hello@cocotails.com</span>
+              <span className="text-gray-300">hello@sobre.com</span>
             </div>
             <div className="flex items-center space-x-3">
               <MapPin className="w-5 h-5 text-primary-400" />
@@ -147,7 +147,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 Coco Tails. All rights reserved.
+            © 2024 SOBRE. All rights reserved.
           </p>
           
           <div className="flex space-x-6">

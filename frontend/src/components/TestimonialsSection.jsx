@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
     {
       name: "Sarah Chen",
       role: "Wellness Coach",
-      content: "Coco Tails has completely transformed my evening routine. I can enjoy delicious cocktails without compromising my health goals.",
+      content: "SOBRE has completely transformed my evening routine. I can enjoy delicious cocktails without compromising my health goals.",
       rating: 5,
       avatar: "SC"
     },
@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
     {
       name: "Emma Thompson",
       role: "Nutritionist",
-      content: "I recommend Coco Tails to all my clients. The ingredient quality and nutritional profiles are exceptional.",
+      content: "I recommend SOBRE to all my clients. The ingredient quality and nutritional profiles are exceptional.",
       rating: 5,
       avatar: "ET"
     }
