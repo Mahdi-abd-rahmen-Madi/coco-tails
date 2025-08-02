@@ -7,48 +7,96 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Premium wellness-inspired color palette
+        // Classic, elegant color palette
         primary: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e', // Main vibrant green
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
+          50: '#f9f5f0',
+          100: '#f1e8d9',
+          200: '#e3d1b3',
+          300: '#d4b98d',
+          400: '#c6a167',
+          500: '#b88a41', // Warm brown
+          600: '#936e34',
+          700: '#6e5227',
+          800: '#4a371a',
+          900: '#251b0d',
         },
-        gold: {
-          50: '#fffbeb',
-          100: '#fef3c7',
-          200: '#fde68a',
-          300: '#fcd34d',
-          400: '#fbbf24',
-          500: '#f59e0b', // Sophisticated gold
-          600: '#d97706',
-          700: '#b45309',
-          800: '#92400e',
+        secondary: {
+          50: '#f5f3f0',
+          100: '#eae7e1',
+          200: '#d5cec3',
+          300: '#c0b6a5',
+          400: '#ab9d87',
+          500: '#968569', // Muted gold
+          600: '#786a54',
+          700: '#5a503f',
+          800: '#3c352a',
+          900: '#1e1b15',
+        },
+        accent: {
+          50: '#f0f4f5',
+          100: '#d1dfe3',
+          200: '#b3c9d1',
+          300: '#94b4bf',
+          400: '#759ead',
+          500: '#5c8a99', // Muted teal
+          600: '#496e7a',
+          700: '#36535c',
+          800: '#24373d',
+          900: '#121c1f',
+        },
+        // Wellness brand colors
+        wellness: {
+          charcoal: '#333333',
+          sage: '#8A9B6E',
+          mint: '#A8D5BA',
+          cream: '#F5F5F0',
+          gold: {
+            100: '#F5E7D6',
+            200: '#EAD0AD',
+            300: '#E0B883',
+            400: '#D5A15A',
+            500: '#C08A3D',
+            600: '#9A6E31',
+            700: '#735225',
+            800: '#4D3718',
+            900: '#261B0C',
+            DEFAULT: '#C0A080',
+          },
+        },
+        neutral: {
+          50: '#f8f8f8',
+          100: '#f0f0f0',
+          200: '#e0e0e0',
+          300: '#c6c6c6',
+          400: '#a8a8a8',
+          500: '#8d8d8d',
+          600: '#6f6f6f',
+          700: '#525252',
+          800: '#393939',
+          900: '#1d1d1d',
+        },
+        // Additional colors
+        charcoal: '#374151',
+        // Status colors
+        success: {
+          100: '#f0fdf4',
+          500: '#10b981',
+          900: '#064e3b',
+        },
+        warning: {
+          100: '#fffbeb',
+          500: '#f59e0b',
           900: '#78350f',
         },
-        purple: {
-          50: '#faf5ff',
-          100: '#f3e8ff',
-          200: '#e9d5ff',
-          300: '#d8b4fe',
-          400: '#c084fc',
-          500: '#a855f7',
-          600: '#9333ea', // Deep purple
-          700: '#7c3aed',
-          800: '#6b21a8',
-          900: '#581c87',
+        error: {
+          100: '#fef2f2',
+          500: '#ef4444',
+          900: '#7f1d1d',
         },
-        wellness: {
-          mint: '#10b981',
-          sage: '#6b7280',
-          cream: '#fef7ed',
-          charcoal: '#374151'
+        info: {
+          100: '#eff6ff',
+          500: '#3b82f6',
+          900: '#1e3a8a',
         }
       },
       fontFamily: {

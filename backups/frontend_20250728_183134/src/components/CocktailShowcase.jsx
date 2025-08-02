@@ -1,7 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Star, Zap, Droplets } from 'lucide-react';
-import Image from './ui/Image';
+import React from 'react'
+import { motion } from 'framer-motion'
+import { Star, Zap, Droplets } from 'lucide-react'
 
 const CocktailShowcase = () => {
   const cocktails = [
@@ -10,39 +9,24 @@ const CocktailShowcase = () => {
       description: "Spinach, cucumber, mint, lime, and adaptogenic herbs",
       benefits: ["Antioxidant Rich", "Detoxifying", "Energy Boosting"],
       calories: 85,
-      image: "/images/cocktails/green-goddess.jpg",
-      color: "from-primary-400 to-primary-600",
-      placeholder: (
-        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-green-100 to-green-200">
-          <div className="text-4xl">🍃</div>
-        </div>
-      )
+      image: "🍃",
+      color: "from-primary-400 to-primary-600"
     },
     {
       name: "Golden Elixir",
       description: "Turmeric, ginger, honey, citrus, and collagen peptides",
       benefits: ["Anti-inflammatory", "Skin Health", "Immunity"],
       calories: 92,
-      image: "/images/cocktails/golden-elixir.jpg",
-      color: "from-gold-400 to-gold-600",
-      placeholder: (
-        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200">
-          <div className="text-4xl">✨</div>
-        </div>
-      )
+      image: "✨",
+      color: "from-gold-400 to-gold-600"
     },
     {
       name: "Purple Rain",
       description: "Blueberries, lavender, elderflower, and probiotics",
       benefits: ["Brain Health", "Relaxing", "Gut Health"],
       calories: 78,
-      image: "/images/cocktails/purple-rain.jpg",
-      color: "from-purple-400 to-purple-600",
-      placeholder: (
-        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-100 to-purple-200">
-          <div className="text-4xl">💜</div>
-        </div>
-      )
+      image: "💜",
+      color: "from-purple-400 to-purple-600"
     }
   ]
 
@@ -75,18 +59,9 @@ const CocktailShowcase = () => {
               whileHover={{ y: -10 }}
               className="glass p-8 group cursor-pointer"
             >
-              {/* Cocktail Image */}
-              <div className="w-full h-48 md:h-56 lg:h-64 rounded-xl overflow-hidden mb-6 relative group-hover:shadow-lg transition-all duration-300">
-                <Image 
-                  src={cocktail.image}
-                  alt={cocktail.name}
-                  className="group-hover:scale-105 transition-transform duration-500"
-                  containerClassName="h-full"
-                  placeholder={cocktail.placeholder}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <span className="text-white font-medium text-sm">Click to view recipe</span>
-                </div>
+              {/* Cocktail Icon */}
+              <div className={`w-20 h-20 rounded-full bg-gradient-to-r ${cocktail.color} flex items-center justify-center text-4xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
+                {cocktail.image}
               </div>
 
               {/* Name and Description */}

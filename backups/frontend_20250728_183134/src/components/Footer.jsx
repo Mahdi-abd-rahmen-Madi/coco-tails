@@ -5,26 +5,23 @@ import { Leaf, Instagram, Twitter, Facebook, Mail, Phone, MapPin } from 'lucide-
 
 const Footer = () => {
   const footerLinks = {
-    explore: [
-      { name: 'Our Menu', path: '/menu' },
+    product: [
       { name: 'Cocktail Builder', path: '/cocktail-builder' },
-      { name: 'Ingredient Glossary', path: '/ingredients' },
+      { name: 'Ingredients', path: '/ingredients' },
       { name: 'Virtual Classes', path: '/virtual-classes' },
       { name: 'Subscription', path: '/subscription' }
     ],
     company: [
       { name: 'About Us', path: '/about' },
-      { name: 'Find Us', path: '/find-us' },
-      { name: 'Contact', path: '/contact' },
-      { name: 'Private Events', path: '/private-events' },
-      { name: 'Events', path: '/events' }
-    ],
-    support: [
-      { name: 'FAQ', path: '/faq' },
-      { name: 'Shipping & Returns', path: '/shipping' },
-      { name: 'Gift Cards', path: '/gift-cards' },
+      { name: 'Our Story', path: '/story' },
       { name: 'Careers', path: '/careers' },
       { name: 'Press', path: '/press' }
+    ],
+    support: [
+      { name: 'Help Center', path: '/help' },
+      { name: 'Contact Us', path: '/contact' },
+      { name: 'Shipping Info', path: '/shipping' },
+      { name: 'Returns', path: '/returns' }
     ],
     legal: [
       { name: 'Privacy Policy', path: '/privacy' },
@@ -81,9 +78,9 @@ const Footer = () => {
 
           {/* Links Sections */}
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">Explore</h3>
+            <h3 className="font-display font-semibold text-lg mb-4">Product</h3>
             <ul className="space-y-2">
-              {footerLinks.explore.map((link) => (
+              {footerLinks.product.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.path}
