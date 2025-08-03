@@ -2,15 +2,27 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist",
         "cleanUrls": true
       }
+    },
+    {
+      "src": "backend/app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
+      }
     }
   ],
   "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/api/$1"
+    },
     {
       "src": "/assets/(.*)",
       "headers": {
@@ -19,15 +31,15 @@
     },
     {
       "src": "/favicon.ico",
-      "dest": "/favicon.ico"
+      "dest": "/frontend/public/favicon.ico"
     },
     {
       "src": "/manifest.json",
-      "dest": "/manifest.json"
+      "dest": "/frontend/public/manifest.json"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/frontend/index.html"
     }
   ]
 }

@@ -41,23 +41,63 @@ Coco Tails is a premium healthy cocktails service that combines luxurious design
 
 ### Vercel Deployment
 
-SOBRE frontend is configured for easy deployment on Vercel. Follow these steps to deploy:
+SOBRE is configured for easy deployment on Vercel with the following setup:
+- Frontend: React + Vite application
+- Backend: Python Flask API
+- Automatic routing between frontend and backend
 
-1. Push your code to a GitHub, GitLab, or Bitbucket repository
-2. Sign in to [Vercel](https://vercel.com)
-3. Click "Add New..." → "Project"
-4. Import your repository
-5. Configure the project:
-   - **Framework Preset**: Vite
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-   - **Install Command**: `npm install`
-6. Add environment variables if needed (e.g., API endpoints)
-7. Click "Deploy"
+#### Deployment Steps:
 
-Vercel will automatically deploy your site and provide you with a production URL. It will also set up automatic deployments on every push to your repository.
+1. **Prerequisites**:
+   - Node.js 16+ and npm
+   - Python 3.9+
+   - Vercel CLI (`npm install -g vercel`)
 
-For custom domain setup, refer to [Vercel's documentation](https://vercel.com/docs/concepts/deployments/configure-deployments#configure-domains).
+2. **Environment Variables**:
+   Create a `.env` file in the root directory with the following variables:
+   ```
+   # Frontend
+   VITE_API_URL=/api
+   
+   # Backend
+   FLASK_ENV=production
+   DATABASE_URL=your_database_url
+   SECRET_KEY=your_secret_key
+   ```
+
+3. **Deployment Options**:
+
+   **Option A: Using Vercel Dashboard**
+   1. Push your code to a GitHub, GitLab, or Bitbucket repository
+   2. Sign in to [Vercel](https://vercel.com)
+   3. Click "Add New..." → "Project"
+   4. Import your repository
+   5. Configure the project:
+      - **Framework Preset**: Other (Custom)
+      - **Build Command**: `node vercel-build.js`
+      - **Output Directory**: `.vercel/output/static`
+      - **Install Command**: `npm install`
+   6. Add the environment variables from your `.env` file
+   7. Click "Deploy"
+
+   **Option B: Using Vercel CLI**
+   ```bash
+   # Install Vercel CLI if not already installed
+   npm install -g vercel
+   
+   # Login to Vercel
+   vercel login
+   
+   # Deploy
+   vercel --prod
+   ```
+
+4. **Post-Deployment**:
+   - Set up a custom domain in the Vercel dashboard
+   - Configure environment variables for production
+   - Enable automatic deployments for your main branch
+
+For more information, refer to [Vercel's documentation](https://vercel.com/docs).
 
 ---
 

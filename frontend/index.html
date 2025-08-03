@@ -2,22 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <base href="/" />
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/images/favicon_io/site.webmanifest">
+    
+    <!-- Viewport and Theme -->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title and Description -->
     <title>SOBRE - Premium Healthy Cocktails</title>
     <meta name="description" content="Revolutionizing the cocktail industry with wellness-focused, natural ingredients and mindful drinking. Premium healthy cocktails for the conscious consumer." />
     
-    <!-- Google Fonts -->
+    <!-- Preconnect and Preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </noscript>
     
     <!-- SEO Meta Tags -->
     <meta property="og:title" content="SOBRE - Premium Healthy Cocktails" />
@@ -30,5 +39,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Fallback for Vercel SPA routing
+      if (window.location.pathname !== '/' && !window.location.pathname.endsWith('.html')) {
+        window.history.replaceState(null, '', '/');
+      }
+    </script>
   </body>
 </html>
