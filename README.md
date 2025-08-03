@@ -39,6 +39,30 @@ Coco Tails is a premium healthy cocktails service that combines luxurious design
 
 ## 🚀 Quick Start
 
+### Vercel Deployment
+
+SOBRE frontend is configured for easy deployment on Vercel. Follow these steps to deploy:
+
+1. Push your code to a GitHub, GitLab, or Bitbucket repository
+2. Sign in to [Vercel](https://vercel.com)
+3. Click "Add New..." → "Project"
+4. Import your repository
+5. Configure the project:
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Install Command**: `npm install`
+6. Add environment variables if needed (e.g., API endpoints)
+7. Click "Deploy"
+
+Vercel will automatically deploy your site and provide you with a production URL. It will also set up automatic deployments on every push to your repository.
+
+For custom domain setup, refer to [Vercel's documentation](https://vercel.com/docs/concepts/deployments/configure-deployments#configure-domains).
+
+---
+
+## 🚀 Quick Start
+
 ### Prerequisites
 - Node.js 16+ and npm
 - Python 3.8+

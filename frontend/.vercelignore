@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+
+# Environment files (except production)
+.env*.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development
+.DS_Store
+*.pem
+
+# Testing
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Backend files (in case of monorepo)
+/backend/
+
+# Other
+*.md
+.gitignore
+.vercel
